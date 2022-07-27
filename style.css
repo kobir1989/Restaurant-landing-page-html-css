@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Red+Rose:wght@700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+
+  font-family: 'Della Respira', serif;
+}
+body {
+  background-image: linear-gradient(
+      to top left,
+      rgba(18, 7, 80, 0.788),
+      rgba(33, 6, 58, 0.767)
+    ),
+    url('./assets/bg-img.png');
+
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5rem;
+  width: 90%;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+}
+.list-item {
+  list-style: none;
+  margin: 0 4rem;
+  color: #ecb02e;
+  font-size: 2rem;
+}
+.list-item:hover {
+  color: rgb(235, 121, 46);
+  font-weight: 700;
+}
+.button-small {
+  padding: 1rem;
+  width: 20rem;
+  font-size: 2rem;
+  border-radius: 8px;
+  background-color: tomato;
+  color: #ffffff;
+}
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero-heading {
+  margin: 0 auto 2% auto;
+  width: 70%;
+  font-size: 10rem;
+  color: rgb(223, 165, 41);
+  font-weight: 1800;
+  font-family: 'Red Rose', cursive;
+  text-align: center;
+}
+.button-large {
+  padding: 2rem;
+  font-size: 2.5rem;
+  width: 30rem;
+  border-radius: 8px;
+  background-color: #f76e56;
+  color: #ffffff;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+}
+@media (max-width: 1240px) {
+  .hero-heading {
+    font-size: 5rem;
+  }
+  .logo {
+    width: 10rem;
+    height: 4rem;
+  }
+  .button-small {
+    padding: 1rem;
+    width: 10rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+  }
+  .hero-heading {
+    font-size: 5rem;
+  }
+  .logo {
+    width: 5rem;
+    height: 2rem;
+  }
+  .button-small {
+    padding: 0.5rem;
+    width: 6rem;
+    font-size: 1rem;
+  }
+  .list-item {
+    margin: 0 2rem;
+    font-size: 1.2rem;
+  }
+  .button-large {
+    padding: 1.5rem;
+    font-size: 2rem;
+    width: 20rem;
+    border-radius: 8px;
+  }
+  .bottom {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 95%;
+  }
+  .hero-heading {
+    font-size: 3rem;
+  }
+  .hero {
+    margin: 2rem 0;
+    height: 70vh;
+  }
+
+  .list-item {
+    margin: 0 2rem;
+    font-size: 1rem;
+  }
+  .button-large {
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 15rem;
+    border-radius: 8px;
+  }
+  .bottom {
+    display: none;
+  }
+}
